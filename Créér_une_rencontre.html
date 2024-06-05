@@ -1,27 +1,84 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MeetN'eat</title>
-    <link rel="stylesheet" href="Créér_une_rencontre_styles.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>MeetN'eat</title>
+	<link rel="stylesheet" href="Créér_une_rencontre_styles.css">
 </head>
 <body>
-    <header>
-        <div class="logo">MeetN'eat</div>
-        <nav>
-            <ul>
-                <li><a href="Acceuil.html">Accueil</a></li>
-                <li><a href="Event.html">Événements</a></li>
-                <li><a href="APropos.html">Contact</a></li>
-                <li><a href="Connexion.html">Connexion</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-    </main>
-    <footer>
-        <p>&copy; 2024 MeetN'eat. Tous droits réservés (Prototype pour un exercice).</p>
-    </footer>
+	<header>
+		<div class="logo">MeetN'eat</div>
+		<nav>
+			<ul>
+				<li><a href="Acceuil.html">Accueil</a></li>
+				<li><a href="Event.html">Événements</a></li>
+				<li><a href="APropos.html">A Propos</a></li>
+				<li><a href="Connexion.html">Connexion</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<form action="/submit" method="post">
+			<h1>Mon évenement</h1>
+			
+			<label for="name">Nom du repas :</label>
+			<input type="text" id="name" name="name" required>
+			
+			<label for="name">Date du repas :</label>
+			<input type="text" id="name" name="name" required>
+			
+			<label for="name">Adresse :</label>
+			<input type="text" id="name" name="name" required>
+			
+			<label for="nationality">Style :</label>
+			<select id="nationality" name="nationality" required>
+				<option value="Choosing">Choissisez</option>
+				<option value="Chinoise">Chinoise</option>
+				<option value="Végétarienne">Végétarienne</option>
+				<option value="Francaise">Francaise</option>
+				<option value="Ivoirienne">Ivoirienne</option>
+				<option value="Italienne">Italienne</option>
+				<option value="Malienne">Malienne</option>
+				<option value="Espagnole">Espagnole</option>
+				<option value="Maghrebine">Maghrebine</option>
+				<option value="Grecque">Grecque</option>
+				<option value="Mexicaine">Mexicaine</option>
+				<option value="Japonaise">Japonaise</option>
+				<option value="Allemande">Allemande</option>
+				<option value="Indienne">Indienne</option>
+				<option value="Antillaise">Antillaise</option>
+				<option value="Sénégalaise">Sénégalaise</option>
+			</select>
+
+			<label for="paying">Prix d'inscription a l'évenement :</label>
+			<select id="paying" name="paying" required>
+				<option value="free">Gratuit</option>
+				<option value="oneeuro">1€</option>
+				<option value="twoeuro">2€</option>
+				<option value="threeeuro">3€</option>
+				<option value="foureuro">4€</option>
+				<option value="fiveeuro">5€</option>
+				<option value="sixeuro">6€</option>
+				<option value="seveneuro">7€</option>
+				<option value="eighteuro">8€</option>
+				<option value="nineeuro">9€</option>
+				<option value="teneuro">10€</option>
+			</select>
+
+			<input type="file" id="imageUpload" accept="image/*" hidden>
+			<label for="imageUpload" class="custom-file-upload">
+				Ajouter une image d'illustration
+			</label>
+   			 <div id="imagePreview"></div>
+
+			<p></p>
+
+			<button type="#submit">Je crée mon évenement</button>
+	
+	</main>
+	<footer>
+		<p>&copy; 2024 MeetN'eat. Tous droits réservés (Prototype pour un exercice).</p>
+	</footer>
 </body>
 </html>
