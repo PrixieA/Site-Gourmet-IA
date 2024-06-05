@@ -45,6 +45,70 @@ main {
     text-align: center;
 }
 
+.event-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.event {
+    display: flex;
+    align-items: flex-start;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 20px 0;
+    padding: 20px;
+    width: 80%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.event:hover {
+    transform: scale(1.02);
+}
+
+.event img {
+    width: auto;
+    height: 250px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.event-text {
+    flex: 1;
+}
+
+.event-text h2 {
+    margin: 0 0 10px;
+    font-size: 24px;
+    color: #333;
+}
+
+.event-text p {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #ff6f61;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #ffc5bf;
+}
+
 footer {
     background-color: #333;
     color: white;
