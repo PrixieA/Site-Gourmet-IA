@@ -5,9 +5,25 @@ body {
     background-color: #f9f9f9;
 }
 
-form {
+.form-container {
     display: flex;
     justify-content: center;
+    width: 80%;
+}
+
+.form-style {
+    background-color: #ffffff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 45%;
+    margin: 10px;
+}
+
+.flex-form {
+    display: flex;
+    flex-direction: center;
 }
 
 header {
@@ -108,6 +124,59 @@ main {
 
 .checkbox-container label:hover::before {
     border-color: #999;
+}
+
+
+section#foodstyle {
+    background-color: #ff6f61;
+    background-position: center;
+    color: black;
+    padding: 5px 20px;
+    margin: 20px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+section#foodstyle h1 {
+    font-size: 12px;
+    margin-bottom: 2px;
+}
+
+section#foodstyle p {
+    font-size: 10px;
+    margin-bottom: 10px;
+}
+
+section#foodboxes {
+    background-color: #f9f9f9;
+    background-position: center;
+    color: black;
+    padding: 35px 20px;
+    margin: 20px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+section#inscription h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+section#inscription p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.registration-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.registration-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 footer {
